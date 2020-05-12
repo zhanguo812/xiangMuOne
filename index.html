@@ -13,41 +13,66 @@
     <div class="index-header" style="color: #61a0a8;">
       <span style="background-color: #61a0a8;"></span>今日工作统计
     </div>
+    <!-- 今日工作统计 -->
     <div class="mokuai1">
-      <div>
+      <!-- 质量验收 -->
+      <div title="点击查看详情">
         <div>质量验收</div>
-        <div class="muban">
-          <span>0</span>
+        <div class="border-label">
+          <div class="border-change"></div>
+          <div class="border-change-context border-change-start">
+            0
+          </div>
         </div>
       </div>
-      <div>
+      <!-- 材料进场 -->
+      <div title="点击查看详情">
         <div>材料进场</div>
-        <div class="muban">
-          <span>0</span>
+        <div class="border-label">
+          <div class="border-change"></div>
+          <div class="border-change-context border-change-start">
+            0
+          </div>
         </div>
       </div>
-      <div>
+      <!-- 现场巡视 -->
+      <div title="点击查看详情">
         <div>现场巡视</div>
-        <div class="muban">
-          <span>0</span>
+        <div class="border-label">
+          <div class="border-change"></div>
+          <div class="border-change-context border-change-start">
+            0
+          </div>
         </div>
       </div>
-      <div>
+      <!-- 旁站记录 -->
+      <div title="点击查看详情">
         <div>旁站记录</div>
-        <div class="muban">
-          <span>0</span>
+        <div class="border-label">
+          <div class="border-change"></div>
+          <div class="border-change-context border-change-start">
+            0
+          </div>
         </div>
       </div>
-      <div>
+      <!-- 标题 -->
+      <div title="点击查看详情">
         <div>标题</div>
-        <div class="muban">
-          <span>0</span>
+        <div class="border-label">
+          <div class="border-change"></div>
+          <div class="border-change-context border-change-start">
+            0
+          </div>
         </div>
       </div>
-      <div>
+      <!-- 标题 -->
+      <div title="点击查看详情">
         <div>标题</div>
-        <div class="muban">
-          <span>0</span>
+        <div class="border-label">
+          <div class="border-change"></div>
+          <div class="border-change-context border-change-start">
+            0
+          </div>
         </div>
       </div>
     </div>
@@ -59,94 +84,61 @@
         <span style="background-color: #2f4554;margin-left:-3px"></span>本月问题统计
       </div>
     </div>
+    <!-- 今日到岗情况 -->
     <div class="mokuai2">
       <div class="mokuai2_left">
-        <div>
+        <!-- 考勤总人数 -->
+        <div title="点击查看详情">
           <div>考勤总人数</div>
-          <div class="muban danger">
-            <span>0</span>
+          <div class="border-label">
+            <div class="border-change border-changeRed"></div>
+            <div class="border-change-context border-change-start">
+              0
+            </div>
           </div>
         </div>
-        <div>
+        <!-- 到岗人数 -->
+        <div title="点击查看详情">
           <div>到岗人数</div>
-          <div class="muban danger">
-            <span>0</span>
+          <div class="border-label">
+            <div class="border-change border-changeRed"></div>
+            <div class="border-change-context border-change-start">
+              0
+            </div>
           </div>
         </div>
-        <div>
+        <!-- 请假人数 -->
+        <div title="点击查看详情">
           <div>请假人数</div>
-          <div class="muban danger">
-            <span>0</span>
+          <div class="border-label">
+            <div class="border-change border-changeRed"></div>
+            <div class="border-change-context border-change-start">
+              0
+            </div>
           </div>
         </div>
-        <div>
+        <!-- 异常人数 -->
+        <div title="点击查看详情">
           <div>异常人数</div>
-          <div class="muban danger">
-            <span>0</span>
+          <div class="border-label">
+            <div class="border-change border-changeRed"></div>
+            <div class="border-change-context border-change-start ">
+              0
+            </div>
           </div>
         </div>
       </div>
+      <!-- 本月问题统计 -->
       <div class="mokuai2_right">
-        <div id="container" style="width: 100%;height: 100%;background-color: #fff;"></div>
+        <!-- echarts -->
+        <div id="container" style="width: 100%;height: 100%;background-color: #fff;padding-top:10px;padding-left:5px">
+        </div>
       </div>
     </div>
   </div>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/echarts.min.js"></script>
   <script src="js/index.js"></script>
-  <script type="text/javascript">
-    var dom = document.getElementById("container");
-    var myChart = echarts.init(dom);
-    var app = {};
-    option = null;
-    option = {
-      tooltip: {
-        trigger: 'item',
-        formatter: '{a} <br/>{b}: {c} ({d}%)'
-      },
-      legend: {
-        orient: 'vertical',
-        left: 10,
-        data: ['整改中', '已整改', '未整改']
-      },
-      series: [{
-        name: '当前项目',
-        type: 'pie',
-        radius: ['50%', '70%'],
-        avoidLabelOverlap: false,
-        label: {
-          show: false,
-          position: 'center'
-        },
-        emphasis: {
-          label: {
-            show: true,
-            fontSize: '20',
-            fontWeight: 'bold'
-          }
-        },
-        labelLine: {
-          show: false
-        },
-        data: [{
-            value: 2,
-            name: '整改中'
-          },
-          {
-            value: 3,
-            name: '已整改'
-          },
-          {
-            value: 4,
-            name: '未整改'
-          }
-        ]
-      }]
-    };;
-    if (option && typeof option === "object") {
-      myChart.setOption(option, true);
-    }
-  </script>
 </body>
 
 </html>
