@@ -37,7 +37,7 @@ body {
   }
 
   #index>.mokuai2>.mokuai2_left {
-    width: 686px;
+    width: 680px;
   }
 
   #index>.mokuai2>.mokuai2_left>div {
@@ -46,22 +46,22 @@ body {
   }
 
   #index>.mokuai2>.mokuai2_right {
-    width: 490px;
+    width: 515px;
   }
 
   #index>.mokuai2>.mokuai2_right>div {
-    width: 490px;
+    width: 515px;
     height: 370px;
   }
 
   .index-header-width1 {
     color: #c23531;
-    width: 655px;
+    width: 636px;
   }
 
   .index-header-width2 {
     color: #2f4554;
-    width: 490px;
+    width: 500px;
   }
 
   .border-change {
@@ -78,7 +78,6 @@ body {
     font-size: 20px;
   }
 }
-
 
 /*中等PC屏幕下的专用样式*/
 @media screen and (min-width:500px) and (max-width: 1199px) {
@@ -102,7 +101,7 @@ body {
   }
 
   #index>.mokuai2>.mokuai2_right {
-    width: 430px;
+    width: 467px;
   }
 
   #index>.mokuai2>.mokuai2_right>div {
@@ -111,12 +110,12 @@ body {
 
   .index-header-width1 {
     color: #c23531;
-    width: 530px;
+    width: 516px;
   }
 
   .index-header-width2 {
     color: #2f4554;
-    width: 415px;
+    width: 425px;
   }
 
   .border-change {
@@ -133,7 +132,6 @@ body {
     font-size: 15px;
   }
 }
-
 
 #index {
   margin: 20px auto;
@@ -192,9 +190,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: #444;
 }
-
-
 
 #index>.mokuai1>div>div:first-child {
   border-top: 1px solid #2f4554;
@@ -233,7 +230,7 @@ body {
 
 #index>.mokuai2>.mokuai2_right>div {
   height: 358px !important;
-  margin: 15px 10px 15px -5px;
+  margin: 15px 0px 15px -5px;
   box-shadow: -2px -2px 10px #d0d0d0;
   border-radius: 5px;
   z-index: 999;
@@ -296,4 +293,5 @@ body {
   position: absolute;
   text-align: center;
   z-index: 999;
+  border-radius: 50%;
 }
