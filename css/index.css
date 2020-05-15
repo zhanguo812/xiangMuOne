@@ -8,6 +8,22 @@ body {
   margin: 20px;
 }
 
+.color61a0a8FontSize {
+  font-size: 8px;
+}
+
+.color61a0a8 {
+  color: #61a0a8;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-left: 5px
+}
+
 #index .index-header {
   padding: 5px 0 5px 20px;
   background: linear-gradient(#e0e7fc 0%,
@@ -205,6 +221,17 @@ body {
   border-bottom: 1px solid #c23531;
   padding: 5px;
   border-radius: 4px;
+}
+
+#index .center {
+  padding: 15px;
+  text-align: center;
+}
+
+#index .center>div {
+  font-size: 8px;
+  color: #c23531;
+  margin-top: 10px;
 }
 
 #index>.mokuai2>.mokuai2_left>div:first-child {

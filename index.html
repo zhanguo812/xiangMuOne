@@ -10,7 +10,7 @@
 
 <body>
   <div id="index">
-    <div class="index-header" style="color: #61a0a8;">
+    <div class="index-header color61a0a8">
       <span style="background-color: #61a0a8;"></span>今日工作统计
     </div>
     <!-- 今日工作统计 -->
@@ -24,7 +24,10 @@
             13
           </div>
         </div>
-        <div style="font-size: 8px;color:#61a0a8">33<span>%</span></div>
+        <div class="color61a0a8 color61a0a8FontSize">
+          <span>33</span>
+          <span>%</span>
+        </div>
       </div>
       <!-- 材料进场 -->
       <div title="点击查看详情">
@@ -35,7 +38,10 @@
             7
           </div>
         </div>
-        <div style="font-size: 8px;color:#61a0a8">15<span>%</span></div>
+        <div class="color61a0a8 color61a0a8FontSize">
+          <span>15</span>
+          <span>%</span>
+        </div>
       </div>
       <!-- 现场巡视 -->
       <div title="点击查看详情">
@@ -46,7 +52,10 @@
             4
           </div>
         </div>
-        <div style="font-size: 8px;color:#61a0a8">3<span>%</span></div>
+        <div class="color61a0a8 color61a0a8FontSize">
+          <span>3</span>
+          <span>%</span>
+        </div>
       </div>
       <!-- 旁站记录 -->
       <div title="点击查看详情">
@@ -57,7 +66,10 @@
             6
           </div>
         </div>
-        <div style="font-size: 8px;color:#61a0a8">5<span>%</span></div>
+        <div class="color61a0a8 color61a0a8FontSize">
+          <span>5</span>
+          <span>%</span>
+        </div>
       </div>
       <!-- 标题 -->
       <div title="点击查看详情">
@@ -68,7 +80,10 @@
             8
           </div>
         </div>
-        <div style="font-size: 8px;color:#61a0a8">7<span>%</span></div>
+        <div class="color61a0a8">
+          <span>7</span>
+          <span>%</span>
+        </div>
       </div>
       <!-- 标题 -->
       <div title="点击查看详情">
@@ -79,7 +94,7 @@
             9
           </div>
         </div>
-        <div style="font-size: 8px;color:#61a0a8">8<span>%</span></div>
+        <div class="color61a0a8">8<span>%</span></div>
       </div>
     </div>
     <div style="display: flex;justify-content:space-between;">
@@ -95,7 +110,7 @@
       <div class="mokuai2_left">
         <!-- 考勤总人数 -->
         <div title="点击查看详情">
-          <div style="padding:15px;text-align: center;">考勤总人数
+          <div class="center">考勤总人数
             <!-- <div style="font-size: 8px;color:#c23531;margin-top: 10px;">88<span>%</span></div> -->
           </div>
           <div class="border-label">
@@ -107,8 +122,11 @@
         </div>
         <!-- 到岗人数 -->
         <div title="点击查看详情">
-          <div style="padding:15px;text-align: center;">到岗人数
-            <div style="font-size: 8px;color:#c23531;margin-top: 10px;">96<span>%</span></div>
+          <div class="center">到岗人数
+            <div>
+              <span>96</span>
+              <span>%</span>
+            </div>
           </div>
           <div class="border-label">
             <div class="border-change border-changeRed"></div>
@@ -119,8 +137,11 @@
         </div>
         <!-- 请假人数 -->
         <div title="点击查看详情">
-          <div style="padding:15px;text-align: center;">请假人数
-            <div style="font-size: 8px;color:#c23531;margin-top: 10px;">4<span>%</span></div>
+          <div class="center">请假人数
+            <div>
+              <span>4</span>
+              <span>%</span>
+            </div>
           </div>
           <div class="border-label">
             <div class="border-change border-changeRed"></div>
@@ -131,8 +152,11 @@
         </div>
         <!-- 异常人数 -->
         <div title="点击查看详情">
-          <div style="padding:15px;text-align: center;">异常人数
-            <div style="font-size: 8px;color:#c23531;margin-top: 10px;">0<span>%</span></div>
+          <div class="center">异常人数
+            <div>
+              <span>0</span>
+              <span>%</span>
+            </div>
           </div>
           <div class="border-label">
             <div class="border-change border-changeRed"></div>
@@ -145,8 +169,7 @@
       <!-- 本月问题统计 -->
       <div class="mokuai2_right">
         <!-- echarts -->
-        <div id="container" style="width: 100%;height: 100%;background-color: #fff;padding-top:10px;padding-left:5px">
-        </div>
+        <div id="container"></div>
       </div>
     </div>
   </div>
